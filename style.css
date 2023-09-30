@@ -41,3 +41,38 @@ a {
 .nav ul li a {
   color: black;
 }
+/* burger menu */
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+.burger {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
+
+/* Hero section */
+#hero {
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-name {
+  font-size: 3rem;
+  color: #3e48d4;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+.hero-right img {
+  width: 95%;
+  border-radius: 10px;
+}
