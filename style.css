@@ -4,15 +4,40 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body {
-  background-color: #888;
-}
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.navbar ul {
-  flex-direction: row;
+a {
   text-decoration: none;
+}
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.nav ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.nav ul li a {
+  color: black;
 }
