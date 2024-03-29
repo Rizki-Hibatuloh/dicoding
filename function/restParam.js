@@ -14,3 +14,9 @@ function Sum(...numbers){
     return result;
 }
 console.log(Sum(1,2,3,4,5)); // 15 
+
+function ConcatString(...str) {
+    let words =  str.join(" ");
+    return words;
+}
+console.log(ConcatString("Hello", "World","From","Javascript")); // Hello  World From Javascript
