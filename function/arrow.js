@@ -24,3 +24,12 @@ city ("Seoul")
     const city= (cityName) => console.log(`I live in ${cityName}`);
     city ("Seoul");
 */
+
+const multiply= (x,y)=> x*y;
+console.log(multiply(5,3));
+
+/*
+ketika fungsi perlu mengembalikan nilai,kita tidak perlu lagi 
+menuliskan return(hanya bekerja jika fungsi hanya 1 baris).
+*/
+ 
