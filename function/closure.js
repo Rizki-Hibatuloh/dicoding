@@ -34,3 +34,43 @@
 
     const  ucapSaya = sayHello();
     ucapSaya();
+
+
+/*
+* Private variabel :
+* kenapa kita perlu membuat variabel private ?
+*fungsinya yaitu untuk membatasi akses ke fungsi atau variabel tertentu. Membuat variabel menjadi private.
+
+contoh :
+*/
+
+let counter = 0;
+
+const add = () => {
+    return ++counter;
+}
+console.log(add());
+console.log(add());
+console.log(add());
+counter = 10;
+console.log(add());
+
+/*
+    nilai counter akan bertambah ketika kita memanggil add (). Kita juga bisa mengubah nilai counter secara langsung
+    dengan assigment operator.Namun pada program yg lebih kompleks lebih baik dihindari penggunaan ini,
+    karena dapat menyebabkan bug.
+
+    Kita bisa membuat  variable private seperti berikut:
+*/ 
+
+const tambah = () =>{
+    let counters = 0;
+    return ()=>{
+       return ++counters;
+    };
+}
+const hitung = tambah();
+console.log(hitung()) //
+console.log(hitung()) //
+console.log(hitung()) //
+console.log(hitung()) //
